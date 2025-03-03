@@ -46,4 +46,10 @@ public class Infrastructure {
         return null;
     }
 
+    private void parseInformation() {
+        // TODO: Get the first 20 news from the articles array of the json result
+        //  and parse the information of each on of them to be mapped to News class
+        //  finally add them to newsList in this class to display them in the output
+    }
+
 }
