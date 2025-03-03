@@ -5,9 +5,9 @@ In this assignment, you will develop a Java application that functions as a simp
 ## Objectives ✏️
 By completing this assignment, you will:
 
-- Reinforce your understanding of Object-Oriented Programming (OOP) principles and apply them effectively.
-- Gain familiarity with the process of issuing HTTP requests to APIs and parsing JSON data in Java.
-- Learn to manage and track changes in your project using Git.
+- Reinforce your understanding of **Object-Oriented Programming (OOP)** principles and apply them effectively.
+- Gain familiarity with the process of issuing **HTTP** requests to APIs and parsing **JSON** data in Java.
+- Learn to manage and track changes in your project using **Git**.
 ## Prerequisites ✅
 Before getting started, ensure you have the following installed:
 
@@ -17,7 +17,7 @@ Before getting started, ensure you have the following installed:
 ## Tasks 📝
 1. Fork this repository and clone it to your local machine.
 2. Create a new branch named develop and switch to it. All development should be done in this branch.
-3. Get an API key from https://newsapi.org. You need to create an account first.
+3. Get an API key from https://newsapi.org. **You need to create an account first.**
 4. Design News class with appropriate methods and attributes. Complete the methods in the code and add at least one new attribute for the class, then write a new method to get the attribute's proper value using JSON string.
 5. Implement a menu in your Main class. This menu should contain the titles of news. The user should be able to choose the desired article to read more information about it.
 
