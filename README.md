@@ -18,13 +18,13 @@ Before getting started, ensure you have the following installed:
 1. Fork this repository and clone it to your local machine.
 2. Create a new branch named develop and switch to it. All development should be done in this branch.
 3. Get an API key from https://newsapi.org. **You need to create an account first.**
-4. Design News class with appropriate methods and attributes. Complete the methods in the code and add at least one new attribute for the class, then write a new method to get the attribute's proper value using JSON string.
-5. Implement a menu in your Main class. This menu should contain the titles of news. The user should be able to choose the desired article to read more information about it.
-
-6. Add error handling to handle cases where the API returns an error or the information is not found.
-7. Write a comprehensive report detailing the tasks you have completed and any challenges you encountered. **Your report should be written in Markdown format.** You can write your report in the provided Report-Template.md file located within the repository, which serves as a simple template for structuring your report.
-8. Commit your changes and push them to your GitHub repository.
-9. Submit a pull request from your develop branch to your main branch. Your mentor will review the pull request and merge it upon approval.
+4. Complete the "Infrastructure" class with appropriate methods and attributes. Complete the methods in the code and add the required attributes and methods for the class.
+5. Design the "News" class with appropriate methods and attributes. Create the "title", "description", "source_name", "author", "URL" and "published_at" attributes and write the "display_news" and other methods required.
+6. Implement a menu in your Main class. This menu should contain the titles of news. The user should be able to choose the desired article to read more information about it.
+7. Add error handling to handle cases where the API returns an error or the information is not found.
+8. Write a comprehensive report detailing the tasks you have completed and any challenges you encountered. **Your report should be written in Markdown format.** You can write your report in the provided Report-Template.md file located within the repository, which serves as a simple template for structuring your report.
+9. Commit your changes and push them to your GitHub repository.
+10. Submit a pull request from your develop branch to your main branch. Your mentor will review the pull request and merge it upon approval.
 ## Evaluation 📃
 Your submission will be evaluated based on the following criteria:
 
