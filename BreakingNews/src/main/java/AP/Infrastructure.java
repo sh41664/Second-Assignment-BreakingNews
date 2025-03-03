@@ -21,10 +21,16 @@ public class Infrastructure {
         this.JSONRESULT = getInformation();
     }
 
+
     private final String URL;
     private final String APIKEY;
     private final String JSONRESULT;
     private ArrayList<News> newsList; // TODO: Create the News class
+
+
+    public ArrayList<News> getNewsList() {
+        return newsList;
+    }
 
     private String getInformation() {
         try {
