@@ -52,6 +52,8 @@ For assistance with this assignment, you may refer to the following resources:
 
 🔗 [Getting Json Data From A RESTFUL API Using Java](https://medium.com/swlh/getting-json-data-from-a-restful-api-using-java-b327aafb3751)
 
+🔗 [Reading / Parsing Data from a JSONObject](https://www.youtube.com/watch?v=Yj5PLmHIsCo)
+
 🔗 [How to Write a Good README File for Your GitHub Project](https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/)
 
 🔗 [A Simple Readme Template](https://gist.github.com/DomPizzie/7a5ff55ffa9081f2de27c315f5018afc)
