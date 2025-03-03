@@ -19,7 +19,7 @@ Before getting started, ensure you have the following installed:
 2. Create a new branch named develop and switch to it. All development should be done in this branch.
 3. Get an API key from https://newsapi.org. **You need to create an account first.**
 4. Complete the "Infrastructure" class with appropriate methods and attributes. Complete the methods in the code and add the required attributes and methods for the class.
-5. Design the "News" class with appropriate methods and attributes. Create the "title", "description", "source_name", "author", "URL" and "published_at" attributes and write the "display_news" and other methods required.
+5. Design the "News" class with appropriate methods and attributes. Create the "title", "description", "source_name", "author", "url" and "published_at" attributes and write the "display_news" and other methods required.
 6. Implement a menu in your Main class. This menu should contain the titles of news. The user should be able to choose the desired article to read more information about it.
 7. Add error handling to handle cases where the API returns an error or the information is not found.
 8. Write a comprehensive report detailing the tasks you have completed and any challenges you encountered. **Your report should be written in Markdown format.** You can write your report in the provided Report-Template.md file located within the repository, which serves as a simple template for structuring your report.
