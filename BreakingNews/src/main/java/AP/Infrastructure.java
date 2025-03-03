@@ -52,4 +52,11 @@ public class Infrastructure {
         //  finally add them to newsList in this class to display them in the output
     }
 
+    public void displayNewsList() {
+        // TODO: Display titles of the news you got from api
+        //  and print them in a way that user can choose one
+        //  to see the full information of the news
+    }
+
+
 }
