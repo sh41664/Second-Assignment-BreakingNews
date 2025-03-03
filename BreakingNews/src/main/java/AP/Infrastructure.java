@@ -58,5 +58,4 @@ public class Infrastructure {
         //  to see the full information of the news
     }
 
-
 }
