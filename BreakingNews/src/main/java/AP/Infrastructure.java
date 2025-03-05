@@ -21,12 +21,6 @@ public class Infrastructure {
         this.JSONRESULT = getInformation();
     }
 
-    public Infrastructure(String APIKEY, String URL) {
-        this.APIKEY = APIKEY;
-        this.URL = URL;
-        this.JSONRESULT = getInformation();
-    }
-
     public ArrayList<News> getNewsList() {
         return newsList;
     }
