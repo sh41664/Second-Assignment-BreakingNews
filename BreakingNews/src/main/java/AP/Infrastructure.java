@@ -17,7 +17,7 @@ public class Infrastructure {
 
     public Infrastructure(String APIKEY) {
         this.APIKEY = APIKEY;
-        this.URL = "https://newsapi.org/v2/everything?q=tesla&from=2025-02-02&sortBy=publishedAt&apiKey=";
+        this.URL = "https://newsapi.org/v2/everything?q=tesla&from=2025-02-05&sortBy=publishedAt&apiKey=";
         this.JSONRESULT = getInformation();
     }
 
