@@ -13,7 +13,7 @@ Before getting started, ensure you have the following installed:
 
 - Git
 - Java 23
-- Gradle as a package manager
+- **Gradle** as a package manager
 
 ## Tasks 📝
 1. Fork this repository and clone it to your local machine.
@@ -26,14 +26,23 @@ Before getting started, ensure you have the following installed:
 8. Write a comprehensive report detailing the tasks you have completed and any challenges you encountered. **Your report should be written in Markdown format.** Write your report in the provided Report.md file located in the repository, which serves as a simple template for structuring your report.
 9. Commit your changes and push them to your GitHub repository.
 10. Submit a pull request from your develop branch to your main branch. Your mentor will review the pull request, score your assignment and merge it upon approval.
-## Evaluation 📃
-Your submission will be evaluated based on the following criteria:
+## Evaluation Criteria ⚖
 
-- Your code should pass all the tests provided in the test directory.
-- Error-free compilation and execution of your code. 
-- Accurate retrieval and presentation of **News** data through the methods written.
-- Clear code structure, readability, thorough commenting, and adherence to clean code principles.
+Your submission will be assessed based on:  
 
+1. **Functionality**:  
+   - Error-free compilation and execution.  
+   - Accurate retrieval and display of **News** data.  
+
+2. **Code Quality**:  
+   - Clear structure, readability, and proper commenting.  
+   - Adherence to clean code principles.  
+
+3. **Proficiency**:  
+   - You must fully understand and explain your code.  
+   - **Use of AI is prohibited**. If AI-generated code is submitted, you must be able to explain it in detail. Failure to do so will result in no marks.  
+
+Ensure your work is original and reflects your understanding. Unexplained or unjustified code will not be credited.
 
 ## Bonus Tasks ✒️
 For additional challenges and learning opportunities, consider the following bonus objectives:
