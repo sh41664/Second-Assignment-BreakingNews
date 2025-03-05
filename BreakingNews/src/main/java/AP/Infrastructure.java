@@ -9,6 +9,12 @@ import java.util.ArrayList;
 
 public class Infrastructure {
 
+    private final String URL;
+    private final String APIKEY;
+    private final String JSONRESULT;
+    private ArrayList<News> newsList; // TODO: Create the News class
+
+
     public Infrastructure(String APIKEY) {
         this.APIKEY = APIKEY;
         this.URL = "https://newsapi.org/v2/everything?q=tesla&from=2025-02-02&sortBy=publishedAt&apiKey=";
@@ -20,13 +26,6 @@ public class Infrastructure {
         this.URL = URL;
         this.JSONRESULT = getInformation();
     }
-
-
-    private final String URL;
-    private final String APIKEY;
-    private final String JSONRESULT;
-    private ArrayList<News> newsList; // TODO: Create the News class
-
 
     public ArrayList<News> getNewsList() {
         return newsList;
