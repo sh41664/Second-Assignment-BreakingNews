@@ -1,4 +1,8 @@
+
 package AP;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
 
 import java.io.IOException;
 import java.net.URI;
@@ -7,14 +11,12 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.util.ArrayList;
 import java.util.Scanner;
-import org.json.JSONObject;
-import org.json.JSONArray;
 
 public class Infrastructure {
     private final String URL;
     private final String APIKEY;
     private final String JSONRESULT;
-    private ArrayList<News> newsList = new ArrayList();
+    private final ArrayList<News> newsList = new ArrayList<>();
 
     public Infrastructure(String APIKEY) {
         this.APIKEY = APIKEY;
@@ -27,6 +29,7 @@ public class Infrastructure {
         return newsList;
     }
 
+    // todo: fix this method to get information correctly
     private String getInformation() {
         try {
             HttpClient client = HttpClient.newHttpClient();
@@ -46,23 +49,24 @@ public class Infrastructure {
         return null;
     }
 
+    // todo: where is it used?
     private void parseInformation() {
-
         try {
             JSONObject jsonObject = new JSONObject(JSONRESULT);
             JSONArray articles = jsonObject.getJSONArray("articles");
 
 
-
             for (int i = 0; i < 20; i++) {
                 JSONObject article = articles.getJSONObject(i);
-                String title = article.getString("title");
-                String description = article.optString("description");
-                String sourceName = article.getJSONObject("source").getString("name");
-                String author = article.optString("author", "Unknown");
-                String url = article.getString("url");
-                String publishedAt = article.getString("publishedAt");
                 News news = new News();
+                news.title = article.getString("title");
+                news. description = article.optString("description");
+                JSONObject newsObj = article.getJSONObject("source");
+                news. author = article.optString("author", "Unknown");
+                news. publishedAt = article.getString("publishedAt");
+                news. url = article.getString("url");
+                news.SourceName = newsObj.getString("name");
+                newsList.add(news);
             }
         } catch (Exception e) {
             System.out.println("Error parsing JSON: " + e.getMessage());
@@ -70,26 +74,14 @@ public class Infrastructure {
     }
 
     public void displayNewsList() {
-        if (newsList == null || newsList.isEmpty()) {
+        if (newsList.isEmpty()) {
             System.out.println("No news available.");
             return;
         }
-        Scanner scanner = new Scanner(System.in);
-        while (true) {
-            System.out.println("News Titles:");
-            for (int i = 0; i < newsList.size(); i++) {
-                System.out.println((i + 1) + ". " + newsList.get(i).showTitle());
-            }
-            System.out.println((newsList.size() + 1) + ". Exit");
-            System.out.print("Choose an article to read more (1-" + (newsList.size() + 1) + "): ");
-            int choice = scanner.nextInt();
-            if (choice == newsList.size() + 1) {
-                System.out.println("Exiting...");
-                break;
-            } else if (choice > 0 && choice <= newsList.size()) {
-                newsList.get(choice - 1).displayNews();
-            } else {
-                System.out.println("Invalid choice. Please try again.");
+        else {
+            for (int i = 0; i < 20; i++) {
+                System.out.println("-------------------------");
+                System.out.println(i + 1 + ") " + newsList.get(i).title);
             }
         }
     }
